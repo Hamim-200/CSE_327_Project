@@ -3,9 +3,363 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laundryyy</title>
+    <title>Digital Laundry System</title>
+ <!-- FAVICON -->
+  <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
+
+  <!-- FONT - (GOOGLE FONTS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <!-- ICONS (FONT AWESOME) -->
+  <script src="https://kit.fontawesome.com/1535749e06.js" crossorigin="anonymous"></script>
+
+  <!-- CSS ADDED -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- CSS FOR RESPONSIVE -->
+  <link rel="stylesheet" href="css/responsive.css" />
 </head>
+
 <body>
-    
+  <!-- -----HEADER SECTION START----- -->
+  <header>
+
+    <!-- -----NAVBAR START----- -->
+    <nav class="navbar section-content">
+      <a class="nav_logo" href="#">
+        <h2 class="logo_text">
+          <i class="fa-solid fa-shirt"></i> LAUND<span id="logo_text_style">R</span>RY
+        </h2>
+      </a>
+      <ul class="nav_menu">
+        <button class="fas fa-times" id="menu-close-button"></button>
+        <li class="nav_item">
+          <a href="#" class="nav_link" id="home-btn">Home</a>
+        </li>
+        <li class="nav_item">
+          <a href="./about.html" class="nav_link">About Us</a>
+        </li>
+        <li class="nav_item">
+          <a href="./service.html" class="nav_link">Services</a>
+        </li>
+        <li class="nav_item">
+          <a href="./faq.html" class="nav_link">FAQ</a>
+        </li>
+        <li class="nav_item">
+          <a href="./contact.html" class="nav_link">Contact</a>
+        </li>
+        <li class="nav_item">
+          <a href="./registration.php" class="nav_btn nav_register_btn"><i class="fa-solid fa-paperclip"></i>Register</a>
+        </li>
+        <li class="nav_item">
+          <a href="./login.php" class="nav_btn nav_login_btn"><i class="fa-solid fa-user"></i> Login</a>
+        </li>
+      </ul>
+      <button class="fas fa-bars" id="menu-open-button"></button>
+    </nav>
+    <!-- -----NAVBAR END----- -->
+
+  </header>
+  <!-- -----HEADER SECTION END----- -->
+
+  <main>
+
+    <!-- -----BANNER SECTION START----- -->
+    <section class="banner_section">
+      <div class="section-content">
+        <!-- BANNER DETAILS -->
+        <div class="banner_details">
+          <p class="banner_welcome_text">
+            <i class="fa-solid fa-wand-sparkles" style="color: #ffd43b; margin-right: 5px"></i>
+            H E L L O !!
+          </p>
+          <h2 class="title">Smart Laundry</h2>
+          <h3 class="subtitle">
+            Fast, Reliable & Hassle-Free <br />
+            Laundry Services
+          </h3>
+          <p class="description">
+            Book laundry services in just a few clicks! We pick up, clean, and
+            deliver your clothes—saving you time and effort. Enjoy real-time
+            tracking, quick turnaround, and top-quality service. Fresh, clean
+            clothes are always within reach!
+          </p>
+          <div class="banner_btn">
+            <div><a href="#" class="nav_btn banner_book_btn"><i class="fa-solid fa-truck-fast"></i> BOOK NOW</a></div>
+            <div><a href="#" class="nav_btn banner_call_btn"><i class="fa-solid fa-phone"></i> CALL US</a></div>
+          </div>
+        </div>
+        <!-- Banner Image -->
+        <div class="banner_image_wrapper">
+          <img src="assets/images/banner_img.gif" alt="BANNER LAUNDRY IMAGE" class="banner_image" />
+        </div>
+      </div>
+    </section>
+    <!-- -----BANNER SECTION END----- -->
+
+
+    <!-- -----WHY US SECTION START----- -->
+    <section class="why_us_section">
+      <div class="section-content">
+        <div class="why_us_image_wrapper">
+          <img src="assets/images/why_us_image.png" alt="" class="why_us_image">
+        </div>
+        <div class="why_us_details">
+          <h2 class="section-title">why us ?</h2>
+          <ul class="text">
+            <li><i class="fas fa-check-circle icon"></i>Quick Online Booking System</li>
+            <li><i class="fas fa-check-circle icon"></i>Doorstep Pickup and Delivery Service</li>
+            <li><i class="fas fa-check-circle icon"></i>High-Quality Cleaning and Ironing</li>
+            <li><i class="fas fa-check-circle icon"></i>Affordable Pricing for All Services</li>
+            <li><i class="fas fa-check-circle icon"></i>Perfect for Busy Professionals</li>
+            <li><i class="fas fa-check-circle icon"></i>Urgent Cleaning for Special Occasions</li>
+            <li><i class="fas fa-check-circle icon"></i>Efficient and Reliable Service Guaranteed</li>
+            <li><i class="fas fa-check-circle icon"></i>Saves Time and Effort</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- -----WHY US SECTION END----- -->
+
+
+    <!-- -----SERVICES SECTION START----- -->
+    <div class="service_section">
+      <h2 class="section-title">OUR SERVICES</h2>
+      <div class="section-content">
+        <ul class="service_list">
+          <li class="service_item">
+            <img src="assets/images/our_service_image_one.png" alt="Service 1" class="service_image">
+            <h3 class="name">IRON</h3>
+            <p class="text">Get crisp, wrinkle-free clothes with our professional ironing service.</p>
+            <button class="nav_btn banner_call_btn">Learn More</button>
+          </li>
+          <li class="service_item">
+            <img src="assets/images/our_service_image_two.png" alt="Service 1" class="service_image">
+            <h3 class="name">WASHING</h3>
+            <p class="text">We use high-quality detergents and soap to keep your clothes fresh and clean.</p>
+            <button class="nav_btn banner_call_btn">Learn More</button>
+          </li>
+          <li class="service_item">
+            <img src="assets/images/our_service_image_three.png" alt="Service 1" class="service_image">
+            <h3 class="name">SEWING</h3>
+            <p class="text">From minor repairs to custom stitching, our expert tailors have got you covered.</p>
+            <button class="nav_btn banner_call_btn">Learn More</button>
+          </li>
+          <li class="service_item">
+            <img src="assets/images/our_service_image_four.png" alt="Service 1" class="service_image">
+            <h3 class="name">HOME DELIVERY</h3>
+            <p class="text">Enjoy doorstep delivery of your freshly cleaned and ironed clothes.</p>
+            <button class="nav_btn banner_call_btn">Learn More</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- -----SERVICES SECTION END----- -->
+
+
+    <!-- -----STEP SECTION START----- -->
+    <section class="steps_section">
+      <div class="section-content">
+        <div class="container">
+          <h1 class="section-title">How it Works</h1>
+          <div class="steps">
+            <div class="step">
+              <div class="circle">
+                <img src="assets/images/step_img_1.png" alt="Book A Pickup">
+              </div>
+              <div class="step_title">1. Book A Pickup</div>
+              <div class="step-text">Choose when and where you wish us to collect & deliver your laundry.</div>
+            </div>
+
+            <div class="step">
+              <div class="circle">
+                <img src="assets/images/step_img_2.png" alt="We Collect">
+              </div>
+              <div class="step_title">2. We Collect</div>
+              <div class="step-text">Our team collects your clothes from your doorstep.</div>
+            </div>
+
+            <div class="step">
+              <div class="circle">
+                <img src="assets/images/step_img_3.png" alt="Expert Processing">
+              </div>
+              <div class="step_title">3. Expert Processing</div>
+              <div class="step-text">Your clothes go through expert cleaning and processing.</div>
+            </div>
+
+            <div class="step">
+              <div class="circle">
+                <img src="assets/images/step_img_4.png" alt="We Deliver">
+              </div>
+              <div class="step_title">4. We Deliver</div>
+              <div class="step-text">We bring back your freshly cleaned and rejuvenated clothes.</div>
+            </div>
+          </div>
+
+          <p class="banner_welcome_text">
+            ONLY EASY <i class="fa-solid fa-4" style="color: #ffd43b;"></i> STEPS TO FOLLOW
+          </p>
+          <a href="#" id="steps_btn" class="nav_btn nav_login_btn" style="margin-left: 20px;"><i
+              class="fa-solid fa-clock"></i> BOOK A PICKUP</a>
+
+        </div>
+      </div>
+    </section>
+    <!-- -----STEP SECTION END----- -->
+
+
+    <!-- -----STATS SECTION START----- -->
+    <section class="stats_section">
+      <div class="stats_items">
+        <div class="stat_item">
+          <h2 class="stat_number">00</h2>
+          <p class="stat_text">OUR TOTAL CUSTOMERS</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat_item">
+          <h2 class="stat_number">50K</h2>
+          <p class="stat_text">FACEBOOK FOLLOWERS</p>
+        </div>
+        <div class="divider"></div>
+        <div class="stat_item">
+          <h2 class="stat_number">60%</h2>
+          <p class="stat_text">CUSTOMER SATISFACTION</p>
+        </div>
+      </div>
+    </section>
+    <!-- -----STATS SECTION END----- -->
+
+
+    <!-- -----REVIEW SECTION START----- -->
+    <section class="reviews_section">
+      <section class="all_review">
+        <h1 class="section-title">Reviews</h1>
+        <div class="reviews_container">
+          <div class="review_card">
+            <p class="review_text">Quick service, clothes always fresh!</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Habib</h5>
+                <p>Uttara</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_card">
+            <p class="review_text">Always satisfied with the results</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Emons</h5>
+                <p>Gulshan</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_card">
+            <p class="review_text">Fast, friendly, and very convenient!</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Sakib</h5>
+                <p>Bashundhara</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_card">
+            <p class="review_text">Impressive quality, will return again</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Sadia</h5>
+                <p>Mirpur</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_card">
+            <p class="review_text">Highly recommend</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Rashid</h5>
+                <p>Uttara</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review_card">
+            <p class="review_text">Best laundry service</p>
+            <div class="reviewer">
+              <img src="assets/images/review_img.png" alt="">
+              <div>
+                <h5>Samiha</h5>
+                <p>Uttara</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button class="explore_reviews">Explore All Reviews</button>
+      </section>
+
+    </section>
+    <!-- -----REVIEW SECTION END----- -->
+
+
+    <!-- -----FOOTER SECTION START----- -->
+    <section class="footer">
+      <div class="footer_box_container">
+        <div class="box">
+          <h3>branches</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt" id="location"></i>Uttara Sector - 11 </a>
+          <a href="#"> <i class="fas fa-map-marker-alt" id="location"></i>Uttara Sector - 9 </a>
+          <a href="#"> <i class="fas fa-map-marker-alt" id="location"></i>Uttara Sector - 7 </a>
+          <a href="#"> <i class="fas fa-map-marker-alt" id="location"></i>Uttara Sector - 6 </a>
+          <a href="#"> <i class="fas fa-map-marker-alt" id="location"></i>Uttara Sector - 5 </a>
+        </div>
+
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i></i> Home</a>
+          <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> About Us </a>
+          <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Service </a>
+          <a href="#"> <i class="fa-solid fa-arrow-up-right-from-square"></i> Contact </a>
+          <a href="#"> <i class="fa-solid fa-user"></i> Login </a>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#"> <i class="fas fa-phone"></i> +8801070986742 </a>
+          <a href="#"> <i class="fas fa-phone"></i> +22-333-4444 </a>
+          <a href="#"> <i class="fas fa-envelope"></i> smartlaundry@gmail.com </a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i> Uttara, Dhaka - 1230 </a>
+        </div>
+
+        <div class="box">
+          <h3>follow us</h3>
+          <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+          <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+          <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+        </div>
+
+      </div>
+
+      <div class="credit_part"> all rights reserved by <span>TEAM BETA</span> | 2025 </div>
+
+    </section>
+    <!-- -----FOOTER SECTION END----- -->
+
+
+  </main>
+
+  <script src="js/nav.js"></script>
 </body>
+
 </html>
