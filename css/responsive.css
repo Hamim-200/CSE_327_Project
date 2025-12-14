@@ -1,0 +1,187 @@
+@media screen and (max-width: 992px) {
+    .navbar :where(#menu-close-button, #menu-open-button) {
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .navbar #menu-close-button {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .navbar #menu-open-button {
+        color: white;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .navbar .nav_menu {
+        display: block;
+        position: fixed;
+        left: -300px;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: white;
+        transition: left 0.2s ease;
+    }
+
+    body.show-mobile-menu .navbar .nav_menu {
+        left: 0;
+    }
+
+    .navbar .nav_menu .nav_link {
+        color: #3b6790;
+        font-size: 1.3rem;
+        display: block;
+    }
+
+    .nav_item {
+        margin-bottom: 20px;
+    }
+
+    .banner_section .section-content {
+        flex-direction: column-reverse;
+        justify-content: center;
+        gap: 50px;
+        text-align: center;
+        padding: 30px 20px 20px;
+    }
+
+    .banner_section .banner_image_wrapper {
+        max-width: 270px;
+        margin-right: 0;
+        margin-top: 50px;
+    }
+
+    .banner_section .banner_details :is(.description, .subtitle, .banner_details),
+    .why_us_section,
+    .why_us_details {
+        max-width: 100%;
+    }
+
+    .banner_section .banner_details .banner_btn {
+        justify-content: center;
+    }
+
+    .why_us_section .section-content {
+        flex-direction: column-reverse;
+        gap: 70px;
+    }
+
+    .why_us_section .why_us_image_wrapper .why_us_image {
+        max-width: 400px;
+        margin: 0px 20px;
+    }
+
+    .service_section .service_list .service_item {
+        width: calc(50% - 20px);
+    }
+
+    .service_section .service_list .service_image {
+        max-width: 50%;
+    }
+
+    .service_section .service_list .name {
+        font-size: 1.25rem;
+    }
+
+    .service_section .service_list .text {
+        font-size: 0.9rem;
+    }
+
+    .service_section .service_list .nav_btn {
+        padding: 8px 12px;
+    }
+
+    .step {
+        width: 45%;
+        margin: 10px 0;
+    }
+
+    #steps_btn {
+        display: inline-block;
+    }
+
+    .stats_section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .stats_items {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .divider {
+        width: 60%;
+        height: 1px;
+    }
+
+    .stat_number {
+        font-size: 36px;
+    }
+
+    .reviews_section {
+        height: auto;
+        padding: 20px;
+    }
+
+    .all_review {
+        margin: 20px auto;
+    }
+
+    .reviews_container {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .review_card {
+        padding: 15px;
+    }
+
+    .review_text {
+        font-size: 14px;
+    }
+
+    .explore_reviews {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    /* REGISTER */
+    .wrapper {
+        background-image: none;
+        background-color: #EFB036;
+    }
+
+    .inner {
+        flex-direction: column;
+    }
+
+    .inner form {
+        padding: 10px 30px 0;
+        width: 100%;
+    }
+
+    .form-wrapper {
+        margin-bottom: 20px;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
