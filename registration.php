@@ -54,6 +54,9 @@ $conn->close();
     <!-- CSS ADDED -->
     <link rel="stylesheet" href="css/registration.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+
+    <!-- Google Sign-In (DEMO ONLY) -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 
 <body>
@@ -75,36 +78,75 @@ $conn->close();
                         <option value="Admin">Admin</option>
                     </select>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="text" name="name" placeholder="Name" class="form-control" required>
                     <i class="fa-solid fa-user"></i>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="text" name="phone" placeholder="Phone" class="form-control" required>
                     <i class="fa-solid fa-phone"></i>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="text" name="address" placeholder="Address" class="form-control" required>
                     <i class="fa-solid fa-location-dot"></i>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="email" name="email" placeholder="Email" class="form-control" required>
                     <i class="fa-solid fa-envelope"></i>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="password" name="password" placeholder="Password" class="form-control" required>
                     <i class="fa-solid fa-lock"></i>
                 </div>
+
                 <div class="form-wrapper">
                     <input type="password" name="confirm_password" placeholder="Confirm Password" class="form-control" required>
                     <i class="fa-solid fa-lock"></i>
                 </div>
+
+                <!-- Google Registration Button (DEMO ONLY) -->
+                <div style="margin: 15px 0; text-align: center;">
+                    <div id="g_id_onload"
+                        data-client_id="123456789-demo.apps.googleusercontent.com"
+                        data-callback="handleGoogleRegister">
+                    </div>
+
+                    <div class="g_id_signin"
+                        data-type="standard"
+                        data-size="large"
+                        data-theme="outline"
+                        data-text="signup_with"
+                        data-shape="rectangular"
+                        data-logo_alignment="left">
+                    </div>
+                </div>
+
                 <button type="submit">Register <i class="fa-solid fa-arrow-right-long"></i></button> <br>
-                <label class="log_section">Already have an account? <a href="login.php"><u> Click Here </u></a></label> <br>
-                <label class="home">Go to Homepage -> <a href="index.html">Home</label>
+
+                <label class="log_section">
+                    Already have an account?
+                    <a href="login.php"><u> Click Here </u></a>
+                </label> <br>
+
+                <label class="home">
+                    Go to Homepage -> <a href="index.html">Home</a>
+                </label>
             </form>
         </div>
     </div>
+
+    <!-- Google Register Demo Script -->
+    <script>
+        function handleGoogleRegister(response) {
+            console.log("Google JWT Token:", response.credential);
+            alert("Google Registration Successful (Demo Only)\n\nNo data was saved to the database.");
+        }
+    </script>
 </body>
 
 </html>
